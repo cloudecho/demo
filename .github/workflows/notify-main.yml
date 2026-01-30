@@ -1,0 +1,15 @@
+on:
+  push:
+    branches: [ gh-page ]
+
+jobs:
+  ping-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Main Hub Build
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.MY_PAT }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/cloudecho/cloudecho.github.io/dispatches \
+          -d '{"event_type": "rebuild-from-demo"}'
