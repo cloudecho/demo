@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>GALLERY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Joy Gomoku,Joy 2048,Joy Tetris,gomoku,2048,tetris">
+    <meta name="description" content="Demo: Joy Gomoku, Joy 2048, Joy Tetris">
+    <style>
+        * {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            width: min(720px, 95vh, 95vw);
+            margin: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 33.3% auto 33.3%;
+        }
+
+        .gallery img {
+            --w: min(238px, 31vw, 31vh);
+            width: var(--w);
+            height: calc(var(--w)/0.7);
+            object-fit: cover;
+        }
+
+        img {
+            border-radius: 7px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="center">DEMO</h3>
+    <div class="gallery">
+        <a href="./tetris">
+            <img alt="Joy Tetris" src="./static/images/tetris.jpg">
+            <p class="center">Joy Tetris</p>
+        </a>
+        <a href="./gomoku">
+            <img alt="Joy Gomoku" src="./static/images/gomoku.jpg">
+            <p class="center">Joy Gomoku</p>
+        </a>
+        <a href="./2048">
+            <img alt="Joy 2048" src="./static/images/2048.jpg">
+            <p class="center">Joy 2048</p>
+        </a>
+         <a href="./snake">
+            <img alt="Snake" src="./static/images/snake.jpg">
+            <p class="center">Snake</p>
+        </a>
+        <a href="./ailab">
+            <img alt="AI Lab" src="./static/images/ai.jpg">
+            <p class="center">AI Lab</p>
+        </a>
+    </div>
+    <h3 class="center">iOS</h3>
+    <div class="gallery">
+        <a href="https://apps.apple.com/us/app/joy-tetris/id6742694023" target="_top">
+            <img alt="Joy Tetris" src="./static/images/tetris.webp">
+            <p class="center">Joy Tetris</p>
+        </a>
+    </div>
+</body>
+
+</html>
