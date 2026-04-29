@@ -26377,7 +26377,7 @@ B.b.R(q,new A.ha(p,new A.ayb(),A.j(p).i("ha<1,e>")))
 q.push(A.u1(!1,!0,B.Ui,s,!0,s,s,s,s,s,s,s,s,s,new A.ayc(),s,s,s,s))
 q.push(B.Uh)
 q.push(A.u1(!1,!0,B.Uj,s,!0,s,s,s,s,s,s,s,s,s,new A.ayd(),s,s,s,s))
-A.aZl(new A.zR(r,55,55,s),"All rights reserved. techo.dev","Techo Gomoku","2.2.0",q,a)},
+A.aZl(new A.zR(r,55,55,s),"All rights reserved. techo.dev","Techo Gomoku","2.2.1",q,a)},
 ayb:function ayb(){},
 ayc:function ayc(){},
 ayd:function ayd(){},
@@ -87979,7 +87979,7 @@ r=A.Y(new A.a1(B.eC,new A.ah7(this,a,c,s),r),r.i("az.E"))
 return r},
 wt(a){var s=a===2?this.f:this.r
 if(s.a===0)return 0
-return new A.b5(s,A.j(s).i("b5<2>")).n7(0,new A.ah6())},
+return Math.min(5e5,new A.b5(s,A.j(s).i("b5<2>")).n7(0,new A.ah6()))},
 U3(a,b,c){var s=this,r=b===2,q=r?s.f:s.r,p=r?1:2,o=s.DI(a,b,c)
 if(o>0)q.m(0,c,o)
 else q.E(0,c)
